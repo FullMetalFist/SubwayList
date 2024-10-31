@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(ModelData.self) var modelData
     var body: some View {
         VStack {
-            Text("\(exits[700])")
-            Text("\(exits.count)")
+            Text("\(modelData.exits[29])")
+            Text("\(modelData.exits.count)")
         }
         .padding()
     }
@@ -19,4 +20,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environment(ModelData())
 }

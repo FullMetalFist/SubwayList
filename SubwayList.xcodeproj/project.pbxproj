@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		996C0BFA2CC997960035191A /* ExitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C0BF92CC997960035191A /* ExitList.swift */; };
 		9980CBAB2CC69BB500574309 /* SubwayListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980CBAA2CC69BB500574309 /* SubwayListApp.swift */; };
 		9980CBAD2CC69BB500574309 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980CBAC2CC69BB500574309 /* ContentView.swift */; };
 		9980CBAF2CC69BB800574309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9980CBAE2CC69BB800574309 /* Assets.xcassets */; };
@@ -14,9 +15,12 @@
 		9980CBBB2CC69D3400574309 /* Exit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980CBBA2CC69D3400574309 /* Exit.swift */; };
 		9980CBBD2CC6A00C00574309 /* MTA_Subway_Entrances_and_Exits__2024_20241021.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9980CBBC2CC6A00C00574309 /* MTA_Subway_Entrances_and_Exits__2024_20241021.csv */; };
 		9980CBC12CC81B3D00574309 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980CBC02CC81B3D00574309 /* ModelData.swift */; };
+		9980CBC42CC9392700574309 /* ExitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980CBC32CC9392700574309 /* ExitRow.swift */; };
+		99AACFE42CD279F1007ACA9E /* SubwayLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AACFE32CD279F1007ACA9E /* SubwayLetterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		996C0BF92CC997960035191A /* ExitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitList.swift; sourceTree = "<group>"; };
 		9980CBA72CC69BB500574309 /* SubwayList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubwayList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9980CBAA2CC69BB500574309 /* SubwayListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayListApp.swift; sourceTree = "<group>"; };
 		9980CBAC2CC69BB500574309 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +29,8 @@
 		9980CBBA2CC69D3400574309 /* Exit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exit.swift; sourceTree = "<group>"; };
 		9980CBBC2CC6A00C00574309 /* MTA_Subway_Entrances_and_Exits__2024_20241021.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MTA_Subway_Entrances_and_Exits__2024_20241021.csv; sourceTree = "<group>"; };
 		9980CBC02CC81B3D00574309 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		9980CBC32CC9392700574309 /* ExitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitRow.swift; sourceTree = "<group>"; };
+		99AACFE32CD279F1007ACA9E /* SubwayLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayLetterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 			children = (
 				9980CBAA2CC69BB500574309 /* SubwayListApp.swift */,
 				9980CBAC2CC69BB500574309 /* ContentView.swift */,
+				9980CBC32CC9392700574309 /* ExitRow.swift */,
+				996C0BF92CC997960035191A /* ExitList.swift */,
+				99AACFE32CD279F1007ACA9E /* SubwayLetterView.swift */,
 				9980CBBA2CC69D3400574309 /* Exit.swift */,
 				9980CBC02CC81B3D00574309 /* ModelData.swift */,
 				9980CBBC2CC6A00C00574309 /* MTA_Subway_Entrances_and_Exits__2024_20241021.csv */,
@@ -149,8 +158,11 @@
 			files = (
 				9980CBAD2CC69BB500574309 /* ContentView.swift in Sources */,
 				9980CBC12CC81B3D00574309 /* ModelData.swift in Sources */,
+				9980CBC42CC9392700574309 /* ExitRow.swift in Sources */,
 				9980CBAB2CC69BB500574309 /* SubwayListApp.swift in Sources */,
+				99AACFE42CD279F1007ACA9E /* SubwayLetterView.swift in Sources */,
 				9980CBBB2CC69D3400574309 /* Exit.swift in Sources */,
+				996C0BFA2CC997960035191A /* ExitList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

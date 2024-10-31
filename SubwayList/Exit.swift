@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Exit: Hashable {
+struct Exit: Hashable, Identifiable {
+    var id = UUID()
+    
     var division: String
     var line: String
     var borough: String
@@ -29,5 +31,6 @@ struct Exit: Hashable {
         case escalator = "Escalator"
         case door = "Door"
         case easement = "Easement"
+        case junk = "Fake"
     }
 }

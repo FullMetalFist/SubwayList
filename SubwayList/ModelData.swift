@@ -7,9 +7,12 @@
 
 import Foundation
 
-var exits: [Exit] = load("MTA_Subway_Entrances_and_Exits__2024_20241021.csv")
+@Observable
+class ModelData {
+    var exits: [Exit] = load("MTA_Subway_Entrances_and_Exits__2024_20241021.csv")
+}
 
-func load(_ filename: String) -> [Exit] {
+fileprivate func load(_ filename: String) -> [Exit] {
     let data: Data
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil) else { fatalError("Couldn't find \(filename) in main bundle")
@@ -24,7 +27,7 @@ func load(_ filename: String) -> [Exit] {
                 
     let exits: [Exit] = rows.map { row in
         let csvColumns = row.components(separatedBy: ",")
-        var tempExit = Exit(division: "div", line: "l", borough: "b", stopName: "s", complexID: -1, stationName: "s", stationID: -2, gtfsStopID: "g", daytimeRoutes: "d", entranceType: .door, entryAllowed: "goin in", exitAllowed: "goin out", entranceLatitude: 0.0, entranceLongitude: 0.0)
+        var tempExit = Exit(division: "div", line: "l", borough: "b", stopName: "s", complexID: -1, stationName: "s", stationID: -2, gtfsStopID: "g", daytimeRoutes: "d", entranceType: .junk, entryAllowed: "goin in", exitAllowed: "goin out", entranceLatitude: 0.0, entranceLongitude: 0.0)
         for (index, column) in csvColumns.enumerated() {
             switch index {
             case 0:
