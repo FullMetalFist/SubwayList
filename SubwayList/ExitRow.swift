@@ -9,19 +9,18 @@ import SwiftUI
 
 struct ExitRow: View {
     var exit: Exit
-    var lines: [Character] = []
+    var lines: String = ""
     
     var body: some View {
         VStack {
             HStack {
-                ZStack {
-                    Circle()
-                        .fill(Color.yellow)
-                    Text(exit.daytimeRoutes)
-                        .font(Font.custom("Helvetica", size: 24)).bold()
+                ForEach(0..<exit.daytimeRoutes.count) { i in
+                    let index = exit.daytimeRoutes.index(exit.daytimeRoutes.startIndex, offsetBy: i)
+                    if !exit.daytimeRoutes[index].isWhitespace {
+                        SubwayLetterView(line: "\(exit.daytimeRoutes[index])")
+                    }
+                    
                 }
-                .frame(width: 80)
-                Spacer()
             }
             HStack {
                 Text(exit.stationName)

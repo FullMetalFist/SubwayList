@@ -17,6 +17,7 @@
 		9980CBC12CC81B3D00574309 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980CBC02CC81B3D00574309 /* ModelData.swift */; };
 		9980CBC42CC9392700574309 /* ExitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980CBC32CC9392700574309 /* ExitRow.swift */; };
 		99AACFE42CD279F1007ACA9E /* SubwayLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AACFE32CD279F1007ACA9E /* SubwayLetterView.swift */; };
+		99AAD0022CE6BD88007ACA9E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AAD0012CE6BD88007ACA9E /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9980CBC02CC81B3D00574309 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		9980CBC32CC9392700574309 /* ExitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitRow.swift; sourceTree = "<group>"; };
 		99AACFE32CD279F1007ACA9E /* SubwayLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayLetterView.swift; sourceTree = "<group>"; };
+		99AAD0012CE6BD88007ACA9E /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				99AACFE32CD279F1007ACA9E /* SubwayLetterView.swift */,
 				9980CBBA2CC69D3400574309 /* Exit.swift */,
 				9980CBC02CC81B3D00574309 /* ModelData.swift */,
+				99AAD0012CE6BD88007ACA9E /* ColorExtension.swift */,
 				9980CBBC2CC6A00C00574309 /* MTA_Subway_Entrances_and_Exits__2024_20241021.csv */,
 				9980CBAE2CC69BB800574309 /* Assets.xcassets */,
 				9980CBB02CC69BB800574309 /* Preview Content */,
@@ -159,6 +162,7 @@
 				9980CBAD2CC69BB500574309 /* ContentView.swift in Sources */,
 				9980CBC12CC81B3D00574309 /* ModelData.swift in Sources */,
 				9980CBC42CC9392700574309 /* ExitRow.swift in Sources */,
+				99AAD0022CE6BD88007ACA9E /* ColorExtension.swift in Sources */,
 				9980CBAB2CC69BB500574309 /* SubwayListApp.swift in Sources */,
 				99AACFE42CD279F1007ACA9E /* SubwayLetterView.swift in Sources */,
 				9980CBBB2CC69D3400574309 /* Exit.swift in Sources */,
