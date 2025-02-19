@@ -18,6 +18,7 @@
 		9980CBC42CC9392700574309 /* ExitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980CBC32CC9392700574309 /* ExitRow.swift */; };
 		99AACFE42CD279F1007ACA9E /* SubwayLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AACFE32CD279F1007ACA9E /* SubwayLetterView.swift */; };
 		99AAD0022CE6BD88007ACA9E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AAD0012CE6BD88007ACA9E /* ColorExtension.swift */; };
+		99D0670C2D65EA3900CF0B7B /* MTA_Subway_Stations_20250219.csv in Resources */ = {isa = PBXBuildFile; fileRef = 99D0670B2D65EA3900CF0B7B /* MTA_Subway_Stations_20250219.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		9980CBC32CC9392700574309 /* ExitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitRow.swift; sourceTree = "<group>"; };
 		99AACFE32CD279F1007ACA9E /* SubwayLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayLetterView.swift; sourceTree = "<group>"; };
 		99AAD0012CE6BD88007ACA9E /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		99D0670B2D65EA3900CF0B7B /* MTA_Subway_Stations_20250219.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = MTA_Subway_Stations_20250219.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				9980CBC02CC81B3D00574309 /* ModelData.swift */,
 				99AAD0012CE6BD88007ACA9E /* ColorExtension.swift */,
 				9980CBBC2CC6A00C00574309 /* MTA_Subway_Entrances_and_Exits__2024_20241021.csv */,
+				99D0670B2D65EA3900CF0B7B /* MTA_Subway_Stations_20250219.csv */,
 				9980CBAE2CC69BB800574309 /* Assets.xcassets */,
 				9980CBB02CC69BB800574309 /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D0670C2D65EA3900CF0B7B /* MTA_Subway_Stations_20250219.csv in Resources */,
 				9980CBB22CC69BB800574309 /* Preview Assets.xcassets in Resources */,
 				9980CBBD2CC6A00C00574309 /* MTA_Subway_Entrances_and_Exits__2024_20241021.csv in Resources */,
 				9980CBAF2CC69BB800574309 /* Assets.xcassets in Resources */,

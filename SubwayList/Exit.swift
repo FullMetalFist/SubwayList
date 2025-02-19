@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Exit: Hashable, Identifiable {
+struct Exit: Hashable, Identifiable, Decodable {
     var id = UUID()
     
     var division: String
@@ -25,7 +25,7 @@ struct Exit: Hashable, Identifiable {
     var entranceLatitude: Double
     var entranceLongitude: Double
     
-    enum EntranceType: String, CaseIterable {
+    enum EntranceType: String, CaseIterable, Decodable {
         case stair = "Stair"
         case elevator = "Elevator"
         case escalator = "Escalator"

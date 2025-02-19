@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ExitList: View {
-    @State  var exits = ModelData().exits
+    @State var exits = ModelData().exits
     
     var body: some View {
         List(exits, id: \.id) { exit in

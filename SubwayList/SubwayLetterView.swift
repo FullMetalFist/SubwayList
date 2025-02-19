@@ -11,21 +11,21 @@ struct SubwayLetterView: View {
     var line: String
     var lineColor: Color = .clear
     let spaceChar: String = " "
-    @ScaledMetric(relativeTo: .title) var paddingWidth = 12
+    @ScaledMetric(relativeTo: .title) var paddingWidth = 6
     
     var body: some View {
         Text("\(line)")
-            .font(.title)
-            .font(Font.custom("Helvetica", size: 24)).bold()
-            .foregroundStyle(textDarkFor(line: line))
-            .padding(paddingWidth)
+            .font(.caption)
+            .padding(8)
+            .font(Font.custom("Helvetica", size: 8, relativeTo: .caption)).bold()
+            .foregroundStyle(textTintFor(line: line))
             .background {
                 Circle()
-                    .fill(line == spaceChar ? .clear : makeColorFrom(line: line))
+                    .foregroundStyle(makeColorFrom(line: line))
             }
     }
     
-    private func textDarkFor(line: String) -> Color {
+    private func textTintFor(line: String) -> Color {
         switch line {
         case "N", "Q", "R", "W":
             return .black
@@ -37,25 +37,25 @@ struct SubwayLetterView: View {
     private func makeColorFrom(line: String) -> Color {
         switch line {
         case "1", "2", "3":
-            return Color(hex: 0xEE352E)
+            return .seventhAv()
         case "4", "5", "6":
-            return Color(hex: 0x00933C)
+            return .lexington()
         case "7":
-            return Color(hex: 0xB933AD)
+            return .flushing()
         case "A", "C", "E", "H":
-            return Color(hex: 0x0039A6)
+            return .eighthAv()
         case "B", "D", "F", "M":
-            return Color(hex: 0xFF6319)
+            return .sixthAv()
         case "J", "Z":
-            return Color(hex: 0x996633)
+            return .nassauStreet()
         case "N", "R", "Q", "W":
-            return Color(hex: 0xFCCC0A)
+            return .broadway()
         case "G":
-            return Color(hex: 0x6CBE45)
+            return .crosstown()
         case "L":
-            return Color(hex: 0xA7A9AC)
+            return .fourteenthStreet()
         case "S":
-            return Color(hex: 0x808183)
+            return .brooklynShuttle()
         default:
             return .clear
         }
@@ -63,5 +63,5 @@ struct SubwayLetterView: View {
 }
 
 #Preview {
-    SubwayLetterView(line: "S")
+    SubwayLetterView(line: "Q")
 }

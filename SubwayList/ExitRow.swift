@@ -13,18 +13,22 @@ struct ExitRow: View {
     
     var body: some View {
         VStack {
-            HStack {
-                ForEach(0..<exit.daytimeRoutes.count) { i in
-                    let index = exit.daytimeRoutes.index(exit.daytimeRoutes.startIndex, offsetBy: i)
-                    if !exit.daytimeRoutes[index].isWhitespace {
-                        SubwayLetterView(line: "\(exit.daytimeRoutes[index])")
+            ScrollView(.horizontal) {
+                LazyHStack(alignment: .top, content: {
+                    ForEach(0..<exit.daytimeRoutes.count, id: \.self) { route in
+                        let index = exit.daytimeRoutes.index(exit.daytimeRoutes.startIndex, offsetBy: route)
+                        if !exit.daytimeRoutes[index].isWhitespace {
+                            SubwayLetterView(line: "\(exit.daytimeRoutes[index])")
+                        }
                     }
-                    
+                })
+            }
+            ScrollView(.horizontal) {
+                LazyHStack {
+                    Text(exit.stationName)
                 }
             }
-            HStack {
-                Text(exit.stationName)
-            }
+            
             HStack {
                 Text(exit.entranceType.rawValue)
             }
@@ -36,7 +40,8 @@ struct ExitRow: View {
 
 #Preview {
     Group {
-        ExitRow(exit: ModelData().exits[9])
+        ExitRow(exit: ModelData().exits[0])
         ExitRow(exit: ModelData().exits[7])
+        ExitRow(exit: ModelData().exits[330])
     }
 }

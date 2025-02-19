@@ -6,15 +6,22 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ContentView: View {
     @Environment(ModelData.self) var modelData
     var body: some View {
-        VStack {
-            Text("\(modelData.exits[29])")
-            Text("\(modelData.exits.count)")
+        TabView {
+            ExitList(exits: modelData.exits)
+                .tabItem {
+                    Label("Station List", systemImage: "list.triangle")
+                }
+            Map()
+                .tabItem {
+                    Label("Map", systemImage: "globe")
+                }
+            
         }
-        .padding()
     }
 }
 

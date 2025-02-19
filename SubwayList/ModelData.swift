@@ -9,8 +9,29 @@ import Foundation
 
 @Observable
 class ModelData {
-    var exits: [Exit] = load("MTA_Subway_Entrances_and_Exits__2024_20241021.csv")
+    var exits: [Exit] = load("MTA_Subway_Stations_20250219.csv")
 }
+
+//class SubwayStationFetcher: ObservableObject {
+//    @Published var exits: [Exit] = []
+//    
+//    let urlString = "https://data.ny.gov/resource/39hk-dx4f.json"
+//    
+//    enum FetchError: Error {
+//        case badRequest
+//        case badJSON
+//    }
+//    
+//    func fetchData() async throws {
+//        guard let url = URL(string: urlString) else { return }
+//        let (data, response) = try await URLSession.shared.data(for: URLRequest(url: url))
+//        guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw FetchError.badRequest }
+//        
+//        Task { @MainActor in
+//            exits = try JSONDecoder().decode([Exit].self, from: data)
+//        }
+//    }
+//}
 
 fileprivate func load(_ filename: String) -> [Exit] {
     let data: Data
